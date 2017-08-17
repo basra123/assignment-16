@@ -1,0 +1,6 @@
+x<-c(2,3,3,4,4,4,5,6,7,9,10)
+mode<-function(x){
+  ux<-unique(x)
+ ux[which.max(tabulate(match(x,ux)))]
+}
+mode(x)
